@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="it">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <script src="index.js"></script>
-  </body>
+    <title>backrooms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-image {
+            background-image: url('bg2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="min-h-screen relative">
+    <!-- Sfondo sfocato -->
+    <div class="fixed inset-0 bg-image blur-sm brightness-50"></div>
+    
+
+    
+    <!-- Contenuto principale -->
+    <div class="relative z-10">
+        <div class="max-w-md mx-auto space-y-8 p-6">
+            <!-- Header -->
+            <header class="text-center space-y-4">
+                <img src="Logo.svg" alt="Band Logo" class="mx-auto">
+            </header>
+            
+            <!-- Links -->
+            <div class="space-y-4">
+                <!-- Spotify -->
+                <a href="https://open.spotify.com/artist/2bA7P1TS678zxovNtvO3YA?si=1ort54SESXWGJk40AiXXUA" class="block bg-green-600 hover:bg-green-700 p-4 rounded-lg text-center transform transition hover:scale-105 shadow-lg">
+                    Spotify
+                </a>
+                
+                <!-- Ultimo Album -->
+                <a href="https://backroomsband.bandcamp.com/" class="block bg-blue-600 hover:bg-blue-700 p-4 rounded-lg text-center transform transition hover:scale-105 shadow-lg">
+                    Bandcamp
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</body>
 </html>
